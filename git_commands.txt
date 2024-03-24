@@ -1,0 +1,26 @@
+aswin is crazy
+
+Terminology: 
+local: Any branch that git maintains locally
+remote: Any branch that is stored in github.com
+HEAD: Is the tip of the branch.
+
+Commands:
+git config --global alias.ls "log --oneline": Add an alias called "ls" for the command "git log"
+git ls: Will execute the above alias
+git log --online: Gives you a listing of all the commits in the current branch.
+git fetch: Will sync up all the remote branches to local, with a prefix of "remotes/ORIGIN/"
+git branch: Current local branch
+git branch -a: List of all branches local and remote.
+git checkout -b sasha: Creates a new branch called sasha and switches to that branch
+git push --set-upstream origin sasha: Create a branch called "sasha" in the remote and set the local upstream branch to "sasha"
+git status: Status of local commits comapred with remote.
+git add <file_name>: Adds a file to git.
+git commit -m "Created sasha.txt": Commited the filed to git.
+git push: Pushes the current branch to remote.
+git fetch and then git rebase origin/main: Rebases all updates from the main branch to the current feature branch.
+Submit for PR, approve and merge PR.
+Delete remote branch.
+git remote prune origin: delete the local reference to a remote branch in your local repository
+git branch -D sasha: Delete local branch "sasha". Has to be done after checkingout to a different branch.
+git push origin -d branch-name: Delete's remote branch "branch-name"
